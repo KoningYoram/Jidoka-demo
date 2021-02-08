@@ -23,5 +23,9 @@ Since the project was created using create-react-app, installation and starting 
 
 ## Known issues
 
-- Lack of lazy loading
-- Css hover issues
+-  Detail reloading or manually navigating resets request
+
+## Todo
+
+- implement React.lazy in about and contact pages
+- Add contact form to contact page (endpoint available in requestservice)

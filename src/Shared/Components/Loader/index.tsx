@@ -1,9 +1,19 @@
-import { FC } from "react"
+import { FC, Fragment } from "react"
 import { Props } from "./Loader.PropsState.interface";
 
-export const Loader: FC<Props> = ({ text, animated }) => {
+import './loader.scss';
+
+export const Loader: FC<Props> = ({ text }) => {
     return (
-        <div>Loading...</div>
+        <Fragment>
+            <div id="stage">
+                <div className="loader dots"><div></div></div>
+                {
+                    text && <p className="loader text">{text}</p>
+                }
+            </div>
+            
+        </Fragment>
     )
 };
 
