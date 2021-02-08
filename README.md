@@ -27,5 +27,5 @@ Since the project was created using create-react-app, installation and starting 
 
 ## Todo
 
-- implement React.lazy in about and contact pages
+- implement React.lazy in about and contact pages, use Loader component in suspense
 - Add contact form to contact page (endpoint available in requestservice)
