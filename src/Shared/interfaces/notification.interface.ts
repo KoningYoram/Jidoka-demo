@@ -1,4 +1,4 @@
-export enum notificationtype{
+export enum Notificationtype{
     ERROR,
     WARNING,
     INFO,
@@ -6,7 +6,7 @@ export enum notificationtype{
 };
 
 export interface Notification {
-    type: notificationtype,
+    type: Notificationtype,
     timeout?: number,
     title?: string,
     text: string

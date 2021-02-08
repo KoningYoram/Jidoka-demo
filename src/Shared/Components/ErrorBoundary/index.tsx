@@ -1,6 +1,6 @@
 import { Component, ErrorInfo, Fragment, ReactNode, PropsWithChildren } from "react";
 import { StyleSheet, css } from 'aphrodite';
-import { notificationtype } from "../../interfaces/notification.interface";
+import { Notificationtype } from "../../interfaces/notification.interface";
 
 import { ErrorNotification, Props, State } from './ErrorBoundary.PropsState.interface';
 
@@ -49,7 +49,7 @@ export class ErrorBoundary extends Component<PropsWithChildren<Props>, State> {
         this.setState({
             hasError: true,
             error: {
-                type: notificationtype.ERROR,
+                type: Notificationtype.ERROR,
                 title: err.name,
                 text: err.message
             }
