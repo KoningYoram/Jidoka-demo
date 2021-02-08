@@ -49,6 +49,10 @@ const Navigation: FC<PropsWithChildren<{}>> = ({ children, ...props }) => {
             textDecoration: 'none',
             marginLeft: '2rem',
             marginRight: '2rem',
+            '@media(max-width: 700px)': {
+                marginLeft: '0.5rem',
+                marginRight: '0.5rem'
+            },
             ":nth-child(1)": {
                 marginLeft: 0
             },
